@@ -1,0 +1,6 @@
+{
+  "postCreateCommand": "bundle install",
+  "postStartCommand": "bundle exec jekyll serve --baseurl '' --livereload --host 0.0.0.0",
+  "forwardPorts": [4000]
+
+}

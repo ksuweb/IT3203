@@ -1,0 +1,75 @@
+:root {
+    --theme-color: rgb(255, 140, 0);
+    --theme-background-color: rgb(216, 245, 254);
+}
+
+main
+{
+    width: 80%;
+    margin: auto;
+    max-width: 800px;
+}
+
+a:hover
+{
+    color: rgb(255, 140, 0);
+}
+
+nav
+{
+    background-color: var(--theme-background-color);
+    padding: 2px 0 1px 10px;
+}
+
+.nav, nav a
+{
+    display: inline-block;
+    padding: 5px 10px 5px 10px;
+    background-color: lightyellow;
+    border-left: 2px solid darkblue ;
+    border-right: 2px solid darkblue;
+    margin-right: 5px;
+    font-size: 1.1em;
+}
+
+.nav:hover, nav a:hover
+{
+    color: white;
+    background-color: rgb(255, 140, 0);
+}
+
+.exteral-sites
+{
+    list-style-type: none;
+    display: flex;  
+    flex-wrap: wrap;
+}
+.exteral-sites a
+{
+    padding: 7px 12px 6px 10px;
+    margin: 5px;
+    display: inline-block;
+    text-decoration: none;
+    background-color: var(--theme-background-color);
+ }
+ .exteral-sites img
+{
+    vertical-align:text-bottom;
+    margin-right: 2px;
+    height: 14px;
+}
+
+/*content page specific*/
+
+#modules
+{
+    background-color: var(--theme-background-color);
+    padding: 5px 0 5px 10px;
+}
+
+#modules summary
+{
+    font-weight: bold;
+    cursor: pointer;
+    padding: 2px;
+}

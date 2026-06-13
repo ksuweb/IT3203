@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title | default: site.title }}</title>
+    <link rel="stylesheet" href="{{ '/style-a.css' | relative_url }}">
+</head>
+<body>
+    <main>
+        <h1>{{ site.course_title }}</h1>
+
+        <nav>
+            <a href="{{ '/index.html' | relative_url }}">Home</a>
+            <a href="{{ '/content.html' | relative_url }}">Content</a>
+            <a href="{{ '/website-examples.html' | relative_url }}">Website Examples</a>
+        </nav>
+
+        {{ content }}
+    </main>
+</body>
+</html>
